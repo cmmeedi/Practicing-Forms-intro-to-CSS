@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="FormsDemo.css" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <div class="login">
+      <h2>Login</h2>
+      <form action="">
+        <table class="LoginTable">
+          <thead>
+            <tr>
+              <td><label for="username">Enter Username</label></td>
+              <td><label for="password">Enter Password</label></td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  type="password"
+                  id="password"
+                  name="loginPassword"
+                  placeholder="Password"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="username"
+                  name="loginUsername"
+                  placeholder="Username"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Marking this checkbox will make the register 
+             box appear-->
+        <div class="regDiv">
+          <label for="regBox">Don't have an account?</label>
+          <input id="regBox" type="checkbox" />
+        </div>
+
+        <button class="subButton">Login</button>
+      </form>
+    </div>
+    <br />
+
+    <hr />
+
+    <br />
+    <div class="register">
+      <h2>Register Info</h2>
+      <form action="">
+        <table class="regTable">
+          <!-- A labels 'for' attribute must match an inputs 'id' attribute
+             in order for them to be linked together-->
+          <tr>
+            <td><label for="Email">Email</label></td>
+            <td><label for="Username">Username</label></td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="email"
+                name="regEmail"
+                id="Email"
+                placeholder="Email"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="reg Username"
+                id="Username"
+                placeholder="Username"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Password">Password</label></td>
+            <td><label for="Confirm">Confirm Password</label></td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="password"
+                name="regPassword"
+                id="Password"
+                placeholder="Password"
+              />
+            </td>
+            <td>
+              <input
+                type="password"
+                id="Confirm"
+                placeholder="Confirm Password"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" checked="true" />
+            </td>
+            <td>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="color">Favorite Color</label>
+              <input type="color" id="color" />
+            </td>
+            <td>
+              <label for="today">Todays Date</label>
+              <input type="date" id="today" />
+            </td>
+          </tr>
+          <br />
+
+          <tr>
+            <td><label for="alive">Days you've been alive?</label></td>
+            <td><label for="time">Current Time</label></td>
+            <td><label for="birth">Birth Month</label></td>
+          </tr>
+
+          <tr>
+            <td><input type="number" placeholder="days alive" id="alive" /></td>
+            <td><input type="time" id="time" /></td>
+            <td>
+              <select name="birth" id="birth">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </td>
+          </tr>
+          <br />
+        </table>
+
+        <p>
+          Besides Big Sz0n who else is part of <sup>Washup</sup>/<sub
+            >Guysh</sub
+          >
+          <br />
+          <textarea name="" id="" cols="70" rows="10"> </textarea>
+        </p>
+
+        <button type="submit" class="subButton">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
